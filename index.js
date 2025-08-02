@@ -72,6 +72,9 @@ app.get('/githubdata' , (req , res) => {
     res.json(githubdata)
 })
 
+app.get('/slush' , (req , res) => {
+    res.send("its not available")
+})
 
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`)
